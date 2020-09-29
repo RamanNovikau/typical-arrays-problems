@@ -9,9 +9,16 @@ exports.min = function min(array) {
     return min;
 };
 
-exports.max = function max (array) {
-  return 0;
+exports.max = function max(array) {
+    var max = 0;
+    if (!array) return max;
+    if (!array.length) return max;
+    max = array[0];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > max) max = array[i];
 }
+    return max;
+};
 
 exports.avg = function avg (array) {
   return 0;
